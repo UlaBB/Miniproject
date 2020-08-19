@@ -11,9 +11,27 @@ h1 {
   padding: 0;
 }
 
+p {
+  font-size: 16px;
+}
+
 a {
   color: #fff;
   text-decoration: none;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+.section-title {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.section-title h1 {
+  font-size: 50px;
+  padding: 1rem;
 }
 
 /*Header*/
@@ -71,4 +89,32 @@ nav ul li {
   padding: 0.5rem 2rem;
   color: #fff;
   margin: 1rem;
+}
+
+/*Services*/
+.service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-box p {
+  text-align: center;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border: 4px solid orange;
+  border-radius: 100%;
+}
+
+.icon i {
+  color: orange;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  line-height: 1.5;
 }
