@@ -1,5 +1,7 @@
 /*Zmienne*/
 
+$font-color: #fff;
+$btn-icon-color:#FED136;
 
 
 /*Global*/
@@ -7,6 +9,9 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1{
@@ -20,6 +25,15 @@ p{
 
 a{
     color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover{
+    list-style: none;
+    color:#FED136;
     text-decoration: none;
 }
 
@@ -38,25 +52,33 @@ section{
 
 /*Header*/
 header{
-    background:url(https://i.postimg.cc/4dSh2ndg/pexels-burst-373893.jpg);
-    min-height: 90vh;
+    background:url(https://i.postimg.cc/6qHRBnFP/pexels-mnz-1670770.jpg);
+    min-height: 80vh;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
-    color:#fff;
+    object-fit: cover;
+    color:$font-color;
+    font-family: 'Montserrat', sans-serif;
 }
+
 nav{
     min-height: 10vh;
     display:flex;
     justify-content: space-between;
-    border:1px solid red;
-    align-items: center;
+    align-items: flex-end;
+    #logo{
+        font-size:24px;
+        color: $btn-icon-color;
+        font-family: 'Lobster', cursive;
+    }
     ul{
         display:flex;
-        border:1px solid green;
         list-style:none;
         width: 500px;
         justify-content: space-between;
+        padding:0;
+        margin:0;
         li{
             color:#fff;
             text-decoration: none;
@@ -69,23 +91,38 @@ nav{
    flex-direction:column;
    justify-content: center;
    align-items: center;
-   min-height:90vh;
-}
-.main-title{
-    font-size: 4rem;
+   min-height:80vh;
+   h2{
+       font-size: 36px;
+        font-weight: 400;
+        font-style: italic;
+        font-family: 'Lobster', cursive;
+        margin:0;
+   }
+   .main-title{
+        font-weight: bolder; 
+        padding:20px 0;
+        font-size: 4rem;
+        text-transform: uppercase;
+   }
+   #btn-banner{
     text-transform: uppercase;
-    padding: 1rem 0;
-}
-#btn-banner{
-    text-transform: uppercase;
-    background:rgb(155, 142, 28);
-    font-size: 1.5rem;
+    background: $btn-icon-color;
+    font-size: 1rem;
+    font-weight:bold;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 15px 50px;
+    color: $font-color;
+    margin: 1rem;
+    }
+    #btn-banner:hover{
+    background: #7e6d33;
     border:none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 2rem;
-    color:#fff;
-    margin:1rem;
+    cursor:pointer;
+    }
 }
+
 
 /*Services*/
 .service-box{

@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -17,6 +21,15 @@ p {
 
 a {
   color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:hover {
+  list-style: none;
+  color: #FED136;
   text-decoration: none;
 }
 
@@ -36,28 +49,36 @@ section {
 
 /*Header*/
 header {
-  background: url(https://i.postimg.cc/4dSh2ndg/pexels-burst-373893.jpg);
-  min-height: 90vh;
+  background: url(https://i.postimg.cc/6qHRBnFP/pexels-mnz-1670770.jpg);
+  min-height: 80vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  object-fit: cover;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
   min-height: 10vh;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
-  align-items: center;
+  align-items: flex-end;
+}
+
+nav #logo {
+  font-size: 24px;
+  color: #FED136;
+  font-family: 'Lobster', cursive;
 }
 
 nav ul {
   display: flex;
-  border: 1px solid green;
   list-style: none;
   width: 500px;
   justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -71,24 +92,40 @@ nav ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
-.main-title {
+.banner h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Lobster', cursive;
+  margin: 0;
+}
+
+.banner .main-title {
+  font-weight: bolder;
+  padding: 20px 0;
   font-size: 4rem;
   text-transform: uppercase;
-  padding: 1rem 0;
 }
 
-#btn-banner {
+.banner #btn-banner {
   text-transform: uppercase;
-  background: #9b8e1c;
-  font-size: 1.5rem;
+  background: #FED136;
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
-  border-radius: 0.5rem;
-  padding: 0.5rem 2rem;
+  border-radius: 0.2rem;
+  padding: 15px 50px;
   color: #fff;
   margin: 1rem;
+}
+
+.banner #btn-banner:hover {
+  background: #7e6d33;
+  border: none;
+  cursor: pointer;
 }
 
 /*Services*/
