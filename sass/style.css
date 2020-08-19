@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -17,6 +17,7 @@ h1 {
 
 p {
   font-size: 16px;
+  text-align: center;
 }
 
 a {
@@ -27,6 +28,20 @@ a {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222222;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+h5 {
+  font-size: 14px;
+  font-style: italic;
+  color: #737373;
+}
+
 a:hover {
   list-style: none;
   color: #FED136;
@@ -35,16 +50,27 @@ a:hover {
 
 section {
   margin: 3rem 0;
+  padding: 3rem 0;
 }
 
 .section-title {
   text-align: center;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
-.section-title h1 {
-  font-size: 50px;
-  padding: 1rem;
+.section-title h2 {
+  font-size: 40px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  color: #222222;
+}
+
+.section-title p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: #777777;
 }
 
 /*Header*/
@@ -69,7 +95,7 @@ nav {
 nav #logo {
   font-size: 24px;
   color: #FED136;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
 
 nav ul {
@@ -129,38 +155,35 @@ nav ul li {
 }
 
 /*Services*/
-.service-box {
+.row-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
-.service-box p {
-  text-align: center;
-}
-
-.footer-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid blue;
+.row-wrapper P {
+  font-size: 14px;
+  font-weight: regular;
+  color: #777777;
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
-  border: 4px solid orange;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #FED136;
   border-radius: 100%;
+  margin-bottom: 20px;
 }
 
 .icon i {
-  color: orange;
-  font-size: 30px;
+  color: #FED136;
+  font-size: 36px;
   display: flex;
   justify-content: center;
   align-content: center;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 /*Gallery*/
@@ -168,12 +191,26 @@ nav ul li {
   background-color: #F7F7F7;
 }
 
-.gallery .gallery-portfolio {
-  margin: 30px 0;
+.gallery .gallery-wrapper {
+  width: 100%;
+  height: 390px;
+  margin: 0 0 30px 0;
+}
+
+.gallery .gallery-wrapper:hover {
+  cursor: pointer;
 }
 
 .gallery-items {
   margin-bottom: 20px;
+}
+
+.gallery-items .gallery-description {
+  padding: 20px 0;
+}
+
+.gallery-items .gallery-description h3 {
+  margin: 0;
 }
 
 .gallery-item {
@@ -183,28 +220,51 @@ nav ul li {
 
 .gallery-item img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 
 /*Footer*/
-.icon-gallery {
+.footer-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 30px 0;
 }
 
-.icon-gallery .icon-box {
-  width: 50px;
-  height: 50px;
-  background: black;
+.footer-wrapper h5 {
+  font-style: normal;
+}
+
+.footer-wrapper .footer-description {
+  text-align: left;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-wrapper .icon-box {
+  width: 40px;
+  height: 40px;
+  background: #222222;
   border-radius: 100%;
+  margin: 0 5px;
 }
 
-.icon-gallery .icon-box i {
+.icon-wrapper .icon-box:hover {
+  background-color: #FED136;
+  cursor: pointer;
+}
+
+.icon-wrapper i {
   color: #fff;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 2.5;
+  line-height: 2;
 }

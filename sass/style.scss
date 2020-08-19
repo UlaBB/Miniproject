@@ -1,7 +1,11 @@
 /*Zmienne*/
 
 $font-color: #fff;
+$title-section-color: #222222;
+$color-section-paragraph: #777777;
 $btn-icon-color:#FED136;
+$font-standard: 'Montserrat', sans-serif;
+$font-decoration: 'Lobster', cursive;
 
 
 /*Global*/
@@ -11,7 +15,7 @@ $btn-icon-color:#FED136;
     padding:0;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-standard;
 }
 
 h1{
@@ -20,6 +24,7 @@ h1{
 }
 p{
     font-size:16px;
+    text-align: center;
 }
 
 
@@ -31,6 +36,19 @@ a{
     font-weight: bold;
 }
 
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: $title-section-color;
+    margin: 0 0 12px 0;
+    text-align:center;
+}
+h5{
+    font-size:14px;
+    font-style:italic;
+    color: #737373;
+}
+
 a:hover{
     list-style: none;
     color:#FED136;
@@ -39,15 +57,24 @@ a:hover{
 
 section{
     margin: 3rem 0;
+    padding: 3rem 0;
 }
 .section-title{
     text-align:center;
-    padding: 4rem 0;
-    h1{
-        font-size: 50px;
-        padding: 1rem;
+    padding: 3rem 0;
+    h2{
+        font-size: 40px;
+        padding: 5px 0;
+        text-transform:uppercase;
+        font-weight:bold;
+        margin:0;
+        color:$title-section-color;
     }
-
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        color: #777777;
+    }
 }
 
 /*Header*/
@@ -61,7 +88,6 @@ header{
     color:$font-color;
     font-family: 'Montserrat', sans-serif;
 }
-
 nav{
     min-height: 10vh;
     display:flex;
@@ -70,7 +96,7 @@ nav{
     #logo{
         font-size:24px;
         color: $btn-icon-color;
-        font-family: 'Lobster', cursive;
+        font-family: $font-decoration;
     }
     ul{
         display:flex;
@@ -125,73 +151,102 @@ nav{
 
 
 /*Services*/
-.service-box{
+.row-wrapper{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    p{
-        text-align:center;
+    margin-bottom: 30px; 
+    P{
+        font-size:14px;
+        font-weight: regular;
+        color:$color-section-paragraph;
     }
 }
-.footer-wrapper{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border:2px solid blue;
-}
 .icon{
-    width: 60px;
-    height:60px;
-    border: 4px solid orange;
+    width: 70px;
+    height:70px;
+    border: 3px solid #FED136;
     border-radius:100%;
+    margin-bottom: 20px;
     i{
-        color:orange;
-        font-size: 30px;
+        color:#FED136;
+        font-size: 36px;
         display:flex;
         justify-content: center;
         align-content: center;
-        line-height: 1.5;
+        line-height: 1.7;
     }
 }
 
 /*Gallery*/
 .gallery{
     background-color:#F7F7F7;
-    .gallery-portfolio{
-        margin: 30px 0;
+    .gallery-wrapper{
+        width: 100%;
+        height: 390px;
+        margin: 0 0 30px 0;
+    }
+    .gallery-wrapper:hover{
+        cursor:pointer;
     }
 }
 .gallery-items{
     margin-bottom: 20px;
+    .gallery-description{
+        padding: 20px 0;
+        h3{
+            margin:0;
+        }
+    }
 }
 .gallery-item{
     background-color:#fff;
     text-align:center;
     img{
     width:100%;
-    height:250px;
+    height:300px;
     object-fit: cover;
     }
 }
 
 /*Footer*/
-.icon-gallery{
-    display:flex;
+
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 30px 0;
+    h5{
+        font-style: normal;
+    }
+    .footer-description{
+        text-align: left;
+    }
+}
+.icon-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     .icon-box{
-        width:50px;
-        height:50px;
-        background:black;
-        border-radius:100%;
+        width: 40px;
+        height: 40px;
+        background: $title-section-color;
+        border-radius: 100%;
+        margin: 0 5px;
+    }
+    .icon-box:hover{
+        background-color: $btn-icon-color;
+        cursor: pointer; 
+    }
         i{
-            color:#fff;
+            color:$font-color;
             font-size:20px;
             display:flex;
             justify-content: center;
             align-items: center;
             text-align:center;
-            line-height: 2.5;
+            line-height: 2;
         }
     }
 
-}
